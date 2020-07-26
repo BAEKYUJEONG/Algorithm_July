@@ -73,4 +73,8 @@ public class ProductMgr {
 		return temp;
 	}
 
+	public int getSize() {
+		return this.index;
+	}
+
 }
