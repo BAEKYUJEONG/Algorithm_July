@@ -54,12 +54,15 @@ public class ProductTest {
 		System.out.println("1. 상품 정보 입력");
 		System.out.print("상품번호 : ");
 		int num = sc.nextInt();
-		System.out.println("상품이름 : ");
+		sc.nextLine();
+		System.out.print("상품이름 : ");
 		String name = sc.nextLine();
-		System.out.println("가격 : ");
+		System.out.print("가격 : ");
 		int price = sc.nextInt();
-		System.out.println("수량 : ");
+		sc.nextLine();
+		System.out.print("수량 : ");
 		int stock = sc.nextInt();
+		sc.nextLine();
 		
 		Product p = new Product(num, name, price, stock);
 		list.add(p);
